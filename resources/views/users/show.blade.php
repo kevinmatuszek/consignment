@@ -22,7 +22,7 @@
 	@foreach($user->items as $item)
 		<tr>
 			<td><a href="{!! route('admin.items.show', [$item]) !!}">{{ $item->name }}</a></td>
-			<td><a href="/brands/{{ $item->brand_id }}">{{ $item->brands->name }}</a></td>
+			<td><a href="/brands/{{ $item->brand_id }}">{{ $item->brand_id }}</a></td>
 			<td>{{ $item->description }}</td>
 			<td>$ {{ $item->price }}</td>
 		</tr>
